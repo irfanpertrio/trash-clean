@@ -1,0 +1,114 @@
+.supplier .dropdown ul {
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+}
+
+.supplier .dropdown ul li button {
+    min-width: 200px;
+    left: 0;
+}
+
+.supplier .dropdown ul button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #2c4964;
+}
+
+.supplier .dropdown ul button i {
+    font-size: 12px;
+}
+
+.supplier .dropdown ul button:hover,
+.supplier .dropdown ul .active:hover,
+.supplier .dropdown ul li:hover>button {
+    color: rgb(126, 217, 87);
+}
+
+.supplier .dropdown:hover>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}
+
+.supplier .dropdown .dropdown ul {
+    top: 0;
+    left: calc(100% - 30px);
+    visibility: hidden;
+}
+
+.supplier .dropdown .dropdown:hover>ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+    visibility: visible;
+}
+
+@media (max-width: 1366px) {
+
+    .supplier .dropdown .dropdown ul {
+        left: -90%;
+    }
+
+    .supplier .dropdown .dropdown:hover>ul {
+        left: -100%;
+    }
+}
+
+.pr-1 {
+    padding-right: 10px;
+}
+
+/* INPUT */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #5846f9;
+}
+
+.btn {
+    /* background: linear-gradient(42deg, #3799DB 0%, #9883E5 100%); */
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: #fff;
+    transition: none;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.bg-custom {
+    background: linear-gradient(42deg, #3799DB 0%, #9883E5 100%);
+}
+
+.text-limit-list-katalog {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
